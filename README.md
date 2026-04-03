@@ -69,3 +69,7 @@ Because this relies on `SYSTEM_ALERT_WINDOW`, it handles best on an actual devic
 
 - The `react-native-keep-awake` can be optionally bound inside the React Native App state when it detects the lock has started to ensure the device never sleeps.
 - Custom images can be swapped into `FloatingLockService.java` by replacing `android.R.drawable.ic_lock_lock` with your localized drawables.
+
+
+
+
