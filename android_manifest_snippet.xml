@@ -1,0 +1,17 @@
+<!-- Locate android/app/src/main/AndroidManifest.xml inside the generated React Native project -->
+<!-- Add the following permissions right above the <application> tag -->
+
+    <!-- Required for the floating bubble and lock overlay (Draw over other apps) -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- Required for keeping the screen on (used by library, but good to declare if you have custom logic) -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Required for biometric authentication functionality (Fingerprint/Face) -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+<!-- Inside the <application> tag, ensure the foreground service is declared to keep the app working when minimized -->
+    <service 
+        android:name="com.lockids.FloatingLockService" 
+        android:enabled="true"
+        android:exported="false"
+        android:foregroundServiceType="specialUse" />
+        <!-- On Android 14+, specifying foregroundServiceType is necessary. 'specialUse' or a relevant type for overlay works -->

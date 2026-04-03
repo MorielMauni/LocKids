@@ -1,0 +1,55 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React Native / OS
+.DS_Store
+*.pem
+
+# Android/IntelliJ
+android/build/
+android/app/build/
+android/.gradle
+android/local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# iOS/Xcode
+ios/build/
+ios/Pods/
+xcuserdata
+*.xcworkspace/xcuserdata
+*.xcuserdatad
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+DerivedData/
+
+# Expo & EAS
+.expo/
+.eas/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+expo-debug.log
+
+# Build Artifacts
+*.apk
+*.aab
+*.ipa
+*.jsbundle
+
+# Local Env
+.env
+.env.local
+.env.*.local

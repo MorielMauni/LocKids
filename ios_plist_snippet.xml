@@ -1,0 +1,6 @@
+<!-- Locate ios/LocKids/Info.plist inside the generated React Native project -->
+<!-- Add the following key-value pairs inside the top-level <dict> tag -->
+
+    <!-- Required by react-native-biometrics for Face ID -->
+    <key>NSFaceIDUsageDescription</key>
+    <string>LocKids needs to use Face ID to safely unlock the device screen.</string>
