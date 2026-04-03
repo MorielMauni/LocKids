@@ -30,4 +30,6 @@ jobs:
 
       - name: 🚀 Build on EAS
         working-directory: ./LocKids
+        env:
+          EAS_NO_VCS: 1
         run: eas build --platform android --profile preview --non-interactive
