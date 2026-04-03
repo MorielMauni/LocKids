@@ -53,3 +53,5 @@ expo-debug.log
 .env
 .env.local
 .env.*.local
+lockids
+lockids.*
